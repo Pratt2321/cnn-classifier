@@ -17,9 +17,7 @@ model = models.Sequential([
 ])
 
 # Compile the model
-model.compile(optimizer='adam',
-              loss='binary_crossentropy',
-              metrics=['accuracy'])
+model.compile(optimizer='adam',loss='binary_crossentropy',metrics=['accuracy'])
 
 # Train the model with your denoised EEG graphs
 model.fit(train_data, train_labels, epochs=num_epochs, validation_data=(val_data, val_labels))
