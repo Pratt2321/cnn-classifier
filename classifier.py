@@ -1,3 +1,6 @@
+import os
+os.environ['TBLE_ONEDNN_OPTS'] = '0'
+
 import tensorflow as tf
 from tensorflow.keras import layers, models
 
@@ -13,7 +16,7 @@ model = models.Sequential([
     layers.MaxPooling2D((2, 2)),
     layers.Flatten(),
     layers.Dense(64, activation='relu'),
-    layers.Dense(1, activation='sigmoid')  # 1 output node for binary classification
+    layers.Dense(1, activation='relu')  # 1 output node for binary classification
 ])
 
 # Compile the model
