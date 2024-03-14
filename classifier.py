@@ -6,7 +6,7 @@ from tensorflow.keras import layers, models
 
 height = 64  # Replace with the actual height of your input data
 width = 64   # Replace with the actual width of your input data
-channels = 3  # Replace with the actual number of channels in your input data (e.g., 1 for grayscale, 3 for RGB)
+channels = 64  # Replace with the actual number of channels in your input data (e.g., 1 for grayscale, 3 for RGB)
 
 # Define your neural network architecture
 model = models.Sequential([
